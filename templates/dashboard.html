@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-  <h2>Dashboard</h2>
-  <p id="welcome"></p>
-  <button id="logoutBtn">Logout</button>
-
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
-  <script src="/static/script.js"></script>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <button id="logoutBtn">Logout</button>
+        <div id="userList"></div>
+    </div>
+    <script src="/static/script.js"></script>
 </body>
 </html>
